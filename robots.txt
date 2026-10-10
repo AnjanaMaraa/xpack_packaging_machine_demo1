@@ -1,0 +1,6 @@
+# robots.txt for DigiMaraa Packaging Machinery
+# Replace the Sitemap URL when the production domain is confirmed.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.example.com/packaging-machinery/sitemap.xml

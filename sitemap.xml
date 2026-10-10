@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for DigiMaraa Packaging Machinery.
+  IMPORTANT: This is a single-page site. Replace the two URLs below when the
+  production domain is confirmed. Do not submit this sitemap prematurely.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.example.com/packaging-machinery/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
