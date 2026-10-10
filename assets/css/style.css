@@ -293,7 +293,7 @@ p {
 
 .btn-primary {
   background: var(--red);
-  color: var(--on-brand);
+  color: #ffffff;
   box-shadow: 0 8px 20px rgba(255, 72, 72, 0.3);
 }
 
@@ -472,6 +472,7 @@ p {
 .nav__link {
   display: inline-block;
   position: relative;
+  white-space: nowrap;
   padding: 0.5rem 0.6rem;
   font-family: var(--font-display);
   font-size: 0.93rem;
@@ -512,6 +513,10 @@ p {
 
 .nav__cta {
   margin-left: var(--sp-2);
+}
+
+.nav__cta .btn {
+  white-space: nowrap;
 }
 
 .nav-toggle {
@@ -1550,6 +1555,13 @@ p {
   margin-bottom: 0.9rem;
 }
 
+.footer-cta .btn,
+.footer-cta .btn:hover,
+.footer-cta .btn:focus,
+.footer-cta .btn:active {
+  color: #ffffff !important;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-block: 1.25rem;
@@ -1611,7 +1623,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   background: var(--red);
-  color: var(--on-brand);
+  color: #ffffff;
   text-decoration: none;
   border-radius: var(--r-pill);
   padding: 0.75rem 1.15rem;
@@ -1763,15 +1775,37 @@ p {
   }
 }
 
-/* ---- desktop nav ---- */
-@media (max-width: 1040px) {
-  .nav__cta .btn {
+/* ---- compact desktop nav ---- */
+@media (max-width: 1240px) {
+  .site-header .container {
     padding-inline: 1.1rem;
   }
 
+  .brand__name {
+    font-size: 0.9rem;
+  }
+
+  .brand__tag {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  .nav {
+    gap: clamp(0.25rem, 0.8vw, 0.6rem);
+  }
+
+  .nav__list {
+    gap: clamp(0.15rem, 0.6vw, 0.5rem);
+  }
+
   .nav__link {
+    font-size: 0.83rem;
+    padding-inline: 0.4rem;
+  }
+
+  .nav__cta .btn {
+    padding-inline: 0.95rem;
     font-size: 0.88rem;
-    padding-inline: 0.45rem;
   }
 }
 
